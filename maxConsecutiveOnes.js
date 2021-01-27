@@ -14,10 +14,21 @@
  * @return {number}
  */
 var findMaxConsecutiveOnes = function(nums) {
+    let current = 0;
     let maxOnes = 0;
     for (num of nums) {
         if (num === 0) {
-            
+            current = 0;
+        } else {
+            current ++;
+        }
+        if (maxOnes < current) {
+            maxOnes = current;
+        } else {
+            maxOnes = maxOnes;
         }
     }
+    return maxOnes;
 };
+
+console.log(findMaxConsecutiveOnes([1, 0, 1, 0, 1, 1, 1, 1, 1]));
