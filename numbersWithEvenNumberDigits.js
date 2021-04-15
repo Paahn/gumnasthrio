@@ -25,3 +25,21 @@
 
 // 1 <= nums.length <= 500
 // 1 <= nums[i] <= 10^5
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ const findNumbers = function(nums) {
+    let evenDigits = 0;
+    for (num of nums) {
+        const digits = num.toString().length;
+        if (digits % 2 === 0) {
+            evenDigits += 1;
+        }
+    }
+    return evenDigits;
+};
+
+console.log(findNumbers([555,901,482,1771]));
+console.log(findNumbers([12,345,2,6,7896]));
