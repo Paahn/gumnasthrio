@@ -22,3 +22,16 @@
 // 1 <= nums.length <= 104
 // -104 <= nums[i] <= 104
 // nums is sorted in non-decreasing order.
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+ const sortedSquares = function(nums) {
+    let squaredNums = [];
+    nums.map(num => squaredNums.push(num * num))
+    return squaredNums.sort((a, b) => a - b);
+};
+
+console.log(sortedSquares([-4,-1,0,3,10]));
+console.log(sortedSquares([-7,-3,2,3,11]))
