@@ -14,5 +14,5 @@ var foodThoughts = function () {
 foodThoughts();
 
 // answer
-// Original favourite food: grapes
+// Original favourite food: undefined
 // New favourite food: sushi
