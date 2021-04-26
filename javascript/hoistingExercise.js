@@ -1,4 +1,4 @@
-// Guess what the console will log, based on hoisting, execution context.
+// Guess what the console will log, based on hoisting, creation phase, execution context phase.
 
 var favouriteFood = "grapes";
 
