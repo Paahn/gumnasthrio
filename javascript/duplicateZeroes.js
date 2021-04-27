@@ -28,6 +28,15 @@
  * @param {number[]} arr
  * @return {void} Do not return anything, modify arr in-place instead.
  */
+const duplicateZeros = function(arr) {
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] === 0) {
+            arr.pop();
+            arr.splice(i, 0, 0);
+            i += 1;
+        }
+    }
+};
 
 //the function below returns a new array with the desired outcome,
 // however the question asks for modification to the original input array
@@ -44,14 +53,5 @@
 //     return copiedArray;
 // };
 
-const duplicateZeros = function(arr) {
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] === 0) {
-            arr.pop();
-            arr.splice(i, 0, 0);
-            i += 1;
-        }
-    }
-};
 
 console.log(duplicateZeros([1,0,2,3,0,4,5,0]));
