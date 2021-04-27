@@ -28,22 +28,20 @@
  * @param {number[]} arr
  * @return {void} Do not return anything, modify arr in-place instead.
  */
-const duplicateZeros = function(arr) {
-    let copyArr = arr;
-    let i = 0;
-    // while (copyArr.length <= arr.length){
-    //     if (arr[i] === 0) {
-    //         copyArr.push(0);
-    //     }
-    //     i = i + 1;
-    // }
-    console.log("copy array length ", copyArr.length);
-    console.log(copyArr);
-    // arr.map( el => {
-    //     if (el === 0) {
-    //         console.log("Hey, I found a zero");
-    //     }
-    // })
-};
 
-duplicateZeros([1,0,2,3,0,4,5,0]);
+//the function below returns a new array with the desired outcome,
+// however the question asks for modification to the original input array
+// const duplicateZeros = function(arr) {
+//     let copiedArray = [];
+//     for (let i = 0; i < arr.length; i++){
+//         if (copiedArray.length < arr.length) {
+//             copiedArray.push(arr[i]);
+//             if (arr[i] === 0) {
+//                 copiedArray.push(0);
+//             }
+//         }
+//     }
+//     return copiedArray;
+// };
+
+console.log(duplicateZeros([1,0,2,3,0,4,5,0]));
