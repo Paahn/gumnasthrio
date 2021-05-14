@@ -9,15 +9,14 @@
  
 
 // Example 1:
-
 // Input: haystack = "hello", needle = "ll"
 // Output: 2
-// Example 2:
 
+// Example 2:
 // Input: haystack = "aaaaa", needle = "bba"
 // Output: -1
-// Example 3:
 
+// Example 3:
 // Input: haystack = "", needle = ""
 // Output: 0
  
@@ -32,5 +31,13 @@
  * @return {number}
  */
  var strStr = function(haystack, needle) {
-    
+    console.log('haystack', haystack);
+    console.log(`does ${haystack} include ${needle}? ${haystack.includes(needle)}`);
+    console.log(`Is this the right index? ${haystack.indexOf(needle)}`);
+    return(haystack.indexOf(needle));
 };
+
+// strStr('hello', 'll');
+// strStr('', '');
+// strStr('aaaaa', 'bba');
+strStr('', '');
